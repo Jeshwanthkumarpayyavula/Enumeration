@@ -33,21 +33,31 @@ Google hacking, also known as Google dorking, is a technique that involves using
 site: This operator allows you to search for pages that are within a specific website or domain. For example, "site:example.com" would search for pages that are on the example.com domain.
 Following searches for all the sites that is in the domain yahoo.com
 
+![image](https://github.com/user-attachments/assets/61c7ccdb-a0cb-4efe-ac8d-36962cbb0b9e)
+
+
 filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
 Following searches for pdf file in the domain yahoo.com
 
+![image](https://github.com/user-attachments/assets/57a7da73-f8ca-4c58-a5c9-2516816d86af)
 
 
 intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
+![Screenshot (349)](https://github.com/user-attachments/assets/9aded600-5ec2-4222-bf9f-c4e4cfcd03c2)
 
 
 inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
+![image](https://github.com/user-attachments/assets/b7520cb7-840c-4f90-9094-0fa57983cb73)
 
 intitle: This operator allows you to search for pages that contain specific text within the title tag. For example, "intitle:index of" would search for pages that contain "index of" within the title tag.
+![Screenshot (350)](https://github.com/user-attachments/assets/83adc5a3-480c-4827-b920-1abf6de03825)
 
 link: This operator allows you to search for pages that link to a specific URL. For example, "link:example.com" would search for pages that link to the example.com domain.
+![image](https://github.com/user-attachments/assets/20e69b44-d3dc-449c-a7c9-c02dbbba2e60)
 
 cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
+![Screenshot 2025-03-15 140323](https://github.com/user-attachments/assets/5954971f-82e6-49f1-ac56-2ddad234c414)
+
 
  
 #DNS Enumeration
@@ -60,6 +70,7 @@ Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TX
 Perform common SRV Record Enumeration
 Top level domain expansion
 ## OUTPUT:
+![WhatsApp Image 2025-03-15 at 14 34 53_a828455d](https://github.com/user-attachments/assets/13b8974f-4c34-4e96-8ef4-ee14653d9840)
 
 
 
@@ -69,6 +80,8 @@ Top level domain expansion
 
 ##dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
+
+![WhatsApp Image 2025-03-15 at 14 36 47_3cb3d733](https://github.com/user-attachments/assets/5f71b355-353b-41fe-ac54-87bb70117a84)
 
 Get the host’s addresses (A record).
 Get the namservers (threaded).
@@ -84,11 +97,17 @@ This program is useful for pentesters, ethical hackers and forensics experts. It
 
 ##smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
+![WhatsApp Image 2025-03-29 at 00 46 56_b722e705](https://github.com/user-attachments/assets/8fd8169a-be3d-4f5a-84fc-b45e47ffbecd)
+
+
+
 
 
 In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 
 select any username in the first column of the above file and check the same
+
+![WhatsApp Image 2025-03-29 at 00 49 31_d54d3e73](https://github.com/user-attachments/assets/a62f1019-bcfa-4cd3-8473-db255586a91c)
 
 
 #Telnet for smtp enumeration
@@ -98,7 +117,8 @@ and issue appropriate commands
   
  ##Output
   
-  
+![WhatsApp Image 2025-03-15 at 14 41 47_de34368f](https://github.com/user-attachments/assets/07b0d504-0810-46c6-9336-e0602138d467)
+
 
 ## nmap –script smtp-enum-users.nse <hostname>
 
@@ -106,6 +126,8 @@ The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server 
 
 
 ## OUTPUT:
+![WhatsApp Image 2025-03-29 at 00 54 05_8a27c707](https://github.com/user-attachments/assets/05edf005-1987-4cba-9119-2406343c5336)
+
 
 
 ## RESULT:
